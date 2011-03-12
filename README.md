@@ -1,5 +1,9 @@
 # This is the simplest possible "hello world" node.js module written in C++
 
+This is a super simple module written as a C++ binding. It does not show how to
+handle async io, but at least it illustrates how the code hooks into _node_ and
+_v8_. This is just a place to start...
+
 A more detailed article on the _How To Node_ website:
 [http://howtonode.org/how-to-module](http://howtonode.org/how-to-module)
 
