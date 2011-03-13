@@ -11,6 +11,9 @@ Download, build and test instructions:
     $ node-waf configure build
     $ node test/cpphello.js
 
+More info here:
+[http://lupomontero.e-noise.com/blog/writing-node-js-modules-in-cpp](http://lupomontero.e-noise.com/blog/writing-node-js-modules-in-cpp)
+
 A more detailed article on the _How To Node_ website:
 [http://howtonode.org/how-to-module](http://howtonode.org/how-to-module)
 
