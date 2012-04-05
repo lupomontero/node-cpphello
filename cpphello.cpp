@@ -9,11 +9,8 @@ static Handle<Value> foo(const Arguments& args)
   return String::New("Hello World");
 }
 
-extern "C" {
-  static void init(Handle<Object> target)
-  {
-    NODE_SET_METHOD(target, "foo", foo);
-  }
 
-  NODE_MODULE(cpphello, init);
+extern "C" void initd(Handle<Object> target)
+{
+  NODE_SET_METHOD(target, "foo", foo);
 }
