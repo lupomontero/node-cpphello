@@ -23,6 +23,6 @@ def shutdown():
   if Options.commands['clean']:
     if exists('cpphello.node'): unlink('cpphello.node')
   else:
-    if exists('build/default/cpphello.node') and not exists('cpphello.node'):
-      symlink('build/default/cpphello.node', 'cpphello.node')
+    if exists('build/Release/cpphello.node') and not exists('cpphello.node'):
+      symlink('build/Release/cpphello.node', 'cpphello.node')
 
