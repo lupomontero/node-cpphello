@@ -12,7 +12,7 @@ Download, build and test instructions:
     $ node test/cpphello.js
 
 More info here:
-[http://lupomontero.e-noise.com/blog/writing-node-js-modules-in-cpp](http://lupomontero.e-noise.com/blog/writing-node-js-modules-in-cpp)
+[http://www.lupomontero.com/writing-node-js-modules-in-cpp/](Writing node.js modules in C++)
 
 A more detailed article on the _How To Node_ website:
 [http://howtonode.org/how-to-module](http://howtonode.org/how-to-module)
