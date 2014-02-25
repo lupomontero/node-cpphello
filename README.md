@@ -21,3 +21,7 @@ Other basic examples (using async io):
 
 * [https://github.com/pkrumins/node-async](https://github.com/pkrumins/node-async)
 * [https://github.com/isaacs/node-async-simple](https://github.com/isaacs/node-async-simple)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lupomontero/node-cpphello/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
