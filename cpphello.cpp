@@ -1,15 +1,16 @@
 #include <v8.h>
 #include <node.h>
 
-using namespace node;
 using namespace v8;
 
-static Handle<Value> foo(const Arguments& args)
-{
-  return String::New("Hello World");
+Handle<Value> foo(const Arguments& args) {
+  HandleScope scope;
+  return scope.Close(String::New("Hello World"));
 }
 
-extern "C" void init(Handle<Object> target)
-{
-  NODE_SET_METHOD(target, "foo", foo);
+void init(Handle<Object> exports) {
+  NODE_SET_METHOD(exports, "foo", foo);
 }
+
+NODE_MODULE(cpphello, init)
+

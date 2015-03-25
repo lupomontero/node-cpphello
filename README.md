@@ -1,27 +1,30 @@
 # The simplest possible "hello world" node.js module written in C++
 
+[![Build Status](https://travis-ci.org/lupomontero/node-cpphello.svg?branch=master)](https://travis-ci.org/lupomontero/node-cpphello)
+
 This is a super simple module written as a C++ binding. It does not show how to
 handle async io, but at least it illustrates how the code hooks into _node_ and
 _v8_. This is just a place to start...
 
 Download, build and test instructions:
 
-    $ git clone git://github.com/lupomontero/node-cpphello.git
-    $ cd node-cpphello
-    $ node-waf configure build
-    $ node test/cpphello.js
+```sh
+# Install node-gyp globally if not installed yet
+npm install -g node-gyp
+
+# Clone, build and test
+git clone git://github.com/lupomontero/node-cpphello.git
+cd node-cpphello
+node-gyp configure build
+npm test
+```
 
 More info here:
 [Writing node.js modules in C++](http://www.lupomontero.com/writing-node-js-modules-in-cpp/)
 
-A more detailed article on the _How To Node_ website:
-[http://howtonode.org/how-to-module](http://howtonode.org/how-to-module)
+Further reading:
 
-Other basic examples (using async io):
-
-* [https://github.com/pkrumins/node-async](https://github.com/pkrumins/node-async)
-* [https://github.com/isaacs/node-async-simple](https://github.com/isaacs/node-async-simple)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lupomontero/node-cpphello/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+* [node-gyp](https://github.com/TooTallNate/node-gyp)
+* [Node.js Addons API](https://nodejs.org/api/addons.html)
+* [rvagg/node-addon-examples](https://github.com/rvagg/node-addon-examples)
 

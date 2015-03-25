@@ -1,0 +1,10 @@
+{
+  "name": "cpphello",
+  "version": "1.0.0",
+  "description": "The simplest possible 'hello world' node.js module written in C++",
+  "main": "./build/Release/cpphello.node",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "gypfile": true
+}
